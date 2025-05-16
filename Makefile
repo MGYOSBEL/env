@@ -3,6 +3,7 @@ SHELL := /bin/bash
 pull-config:
 	git pull origin master
 	rsync -av --progress ./tmux/.tmux.conf ~/
+	cp tmux/tmux-sessionizer ~/.local/bin/
 	mkdir -p ~/.config/nvim
 	rsync -av --progress ./nvim/ ~/.config/nvim/
 	echo "Remember to install your tmux plugins with <leader>I"
