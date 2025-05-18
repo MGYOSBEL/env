@@ -11,6 +11,7 @@ pull-config:
 push-config:
 	cp ~/.tmux.conf ./tmux/
 	rsync -av --progress ~/.config/nvim/ ./nvim/
+	cp ~/.local/bin/tmux-sessionizer ./tmux/
 	@if git diff --quiet && git diff --cached --quiet; then \
 		echo "⚠️  No hay cambios para hacer commit."; \
 	else \
