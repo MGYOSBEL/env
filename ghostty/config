@@ -1,0 +1,5 @@
+font-family = "JetBrainsMonoNL Nerd Font" 
+theme = "Dracula+"
+command = "tmux"
+gtk-single-instance = false
+
