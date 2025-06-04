@@ -1,4 +1,4 @@
-#!/bin/bash
+#!/bin/zsh
 SESSION_NAME="main"
 
 # Check if the session already exists
