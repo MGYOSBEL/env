@@ -6,6 +6,10 @@ vim.opt.listchars = { tab = "| ", trail = "·", nbsp = "␣" }
 vim.lsp.inlay_hint.enable(false)
 vim.g.snacks_animate = false
 
+-- colors
+vim.opt.termguicolors = true
+vim.g.syntax = 'enable'
+vim.o.winblend = 0
 
 -- Copilot Enterprise
 vim.g.copilot_enabled = true
