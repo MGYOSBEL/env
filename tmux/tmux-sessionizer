@@ -1,4 +1,6 @@
-#!/usr/bin/env bash
+#!/usr/bin/env zsh
+
+export PATH="/opt/homebrew/bin:/usr/local/bin:$PATH"
 
 switch_to() {
   if [[ -z $TMUX ]]; then

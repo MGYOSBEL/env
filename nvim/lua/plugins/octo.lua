@@ -14,12 +14,22 @@ return {
       desc = "List Octo commands",
     },
     {
-      "<leader>oi",
+      "<leader>oii",
+      "<CMD>Octo<CR>issue ",
+      desc = "GitHub Issues Commands",
+    },
+    {
+      "<leader>oil",
       "<CMD>Octo issue list<CR>",
       desc = "List GitHub Issues",
     },
     {
-      "<leader>op",
+      "<leader>opp",
+      "<CMD>Octo<CR>pr ",
+      desc = "GitHub PullRequests Commands",
+    },
+    {
+      "<leader>opl",
       "<CMD>Octo pr list<CR>",
       desc = "List GitHub PullRequests",
     },
