@@ -4,6 +4,7 @@ pull-config:
 	git pull origin master
 	rsync -av --progress ./tmux/.tmux.conf ~/
 	cp tmux/tmux-sessionizer ~/.local/bin/
+	cp tmux/tmux-tmux-dev-dir /.local/bin/
 	mkdir -p ~/.config/nvim
 	rsync -av --progress ./nvim/ ~/.config/nvim/
 	echo "Remember to install your tmux plugins with <leader>I"
@@ -12,6 +13,7 @@ push-config:
 	cp ~/.tmux.conf ./tmux/
 	rsync -av --progress ~/.config/nvim/ ./nvim/
 	cp ~/.local/bin/tmux-sessionizer ./tmux/
+	cp ~/.local/bin/tmux-dev-dir ./tmux/
 	@if git diff --quiet && git diff --cached --quiet; then \
 		echo "⚠️  No hay cambios para hacer commit."; \
 	else \
