@@ -35,7 +35,7 @@ else
   tmux move-window -s $(tmux list-windows -F '#I:#W' | grep ':ai$' | cut -d: -f1) -t 3
 fi
 
-tmux send-keys -t "$tmux_session":ai "cd '$dev_dir' && copilot" C-m
+tmux send-keys -t "$tmux_session":ai "cd '$dev_dir' && opencode" C-m
 
 # Ensure only 3 windows
 while [ $(tmux list-windows | wc -l) -gt 3 ]; do
